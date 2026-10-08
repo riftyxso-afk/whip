@@ -1,31 +1,34 @@
 export function OnePromptEveryAsset() {
   return (
-    <div className="box-border w-fit h-fit shrink-0 flex flex-col gap-[72px] p-[120px_60px_60px_60px] justify-start items-center">
-      <div className="box-border w-[1120px] h-[198.25px] shrink-0 flex flex-col gap-[26px] justify-start items-center">
-        <div className="text-[56px]/[58px] box-border w-full text-[#2a2a27] font-inter-variable font-normal tracking-[-1.68px] text-center">
+    <div className="box-border w-full max-w-[1240px] h-fit shrink-0 flex flex-col gap-[40px] md:gap-[72px] px-4 sm:px-8 md:p-[120px_60px_60px_60px] py-12 justify-start items-center">
+      <div className="box-border w-full max-w-[1120px] h-fit shrink-0 flex flex-col gap-[20px] md:gap-[26px] justify-start items-center">
+        <div className="text-[32px]/[36px] sm:text-[44px]/[48px] md:text-[56px]/[58px] box-border w-full text-[#2a2a27] font-inter-variable font-normal tracking-[-1.68px] text-center">
           One workspace.
           <br />
           All your agents.
         </div>
-        <div className="text-[18px]/[28px] box-border w-[640px] h-[55.78px] shrink-0 text-[#8a8880] font-inter font-normal tracking-[-0.14px] text-center">Every tab demonstrates live agent workflows running in real-time.</div>
+        <div className="text-[16px]/[24px] sm:text-[18px]/[28px] box-border w-full max-w-[640px] h-fit shrink-0 text-[#8a8880] font-inter font-normal tracking-[-0.14px] text-center">Every tab demonstrates live agent workflows running in real-time.</div>
       </div>
-      <div className="box-border w-[1120px] h-fit shrink-0 flex flex-col gap-[26px] justify-start items-center">
-        <div className="box-border w-[568px] h-[49px] shrink-0 bg-[#eceae4] [border:1px_solid_#e4e2da] rounded-[999px] relative">
-          <div className="box-border w-[139.5px] h-[39px] [box-shadow:0px_1px_2px_#2a2a2714,_0px_4px_12px_#2a2a2714] absolute left-[5px] top-[5px] bg-[#ffffff] rounded-[999px] [z-index:0]" />
-          <div className="box-border w-[139.5px] h-fit absolute left-[5px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:1]">
-            <div className="text-[15px]/[19px] box-border text-[#2a2a27] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Multi-pane</div>
-          </div>
-          <div className="box-border w-[139.5px] h-fit absolute left-[144.5px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:2]">
-            <div className="text-[15px]/[19px] box-border text-[#8a8880] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Whip Voice</div>
-          </div>
-          <div className="box-border w-[139.5px] h-fit absolute left-[284px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:3]">
-            <div className="text-[15px]/[19px] box-border text-[#8a8880] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Threads</div>
-          </div>
-          <div className="box-border w-[139.5px] h-fit absolute left-[423.5px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:4]">
-            <div className="text-[15px]/[19px] box-border text-[#8a8880] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Multi-account</div>
+      <div className="box-border w-full max-w-[1120px] h-fit shrink-0 flex flex-col gap-[26px] justify-start items-center">
+        <div className="w-full overflow-x-auto pb-2 flex justify-start sm:justify-center scrollbar-none">
+          <div className="box-border w-[568px] h-[49px] shrink-0 bg-[#eceae4] [border:1px_solid_#e4e2da] rounded-[999px] relative">
+            <div className="box-border w-[139.5px] h-[39px] [box-shadow:0px_1px_2px_#2a2a2714,_0px_4px_12px_#2a2a2714] absolute left-[5px] top-[5px] bg-[#ffffff] rounded-[999px] [z-index:0]" />
+            <div className="box-border w-[139.5px] h-fit absolute left-[5px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:1]">
+              <div className="text-[15px]/[19px] box-border text-[#2a2a27] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Multi-pane</div>
+            </div>
+            <div className="box-border w-[139.5px] h-fit absolute left-[144.5px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:2]">
+              <div className="text-[15px]/[19px] box-border text-[#8a8880] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Whip Voice</div>
+            </div>
+            <div className="box-border w-[139.5px] h-fit absolute left-[284px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:3]">
+              <div className="text-[15px]/[19px] box-border text-[#8a8880] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Threads</div>
+            </div>
+            <div className="box-border w-[139.5px] h-fit absolute left-[423.5px] top-[5px] flex flex-col gap-0 p-[10px_12px] justify-center items-center rounded-[999px] [z-index:4]">
+              <div className="text-[15px]/[19px] box-border text-[#8a8880] font-inter font-medium tracking-[-0.07px] text-center [white-space:nowrap]">Multi-account</div>
+            </div>
           </div>
         </div>
-        <div className="box-border w-full h-[702px] shrink-0 [background-image:linear-gradient(180deg,_#f1f0eb_0%,_#eae8e2_58%,_#eceae4_100%)] bg-no-repeat bg-size-[100%_100%] [border:1px_solid_#e4e2da] rounded-[24px] relative">
+        <div className="w-full overflow-x-auto pb-4 scrollbar-none rounded-[24px]">
+          <div className="box-border w-[1120px] h-[702px] shrink-0 [background-image:linear-gradient(180deg,_#f1f0eb_0%,_#eae8e2_58%,_#eceae4_100%)] bg-no-repeat bg-size-[100%_100%] [border:1px_solid_#e4e2da] rounded-[24px] relative">
           <div className="box-border w-[359px] h-fit absolute left-[31px] top-[130.77px] flex flex-col gap-0 justify-start items-center [z-index:0]">
             <div className="box-border w-fit h-fit shrink-0 [box-shadow:0px_1px_2px_#2a2a270d,_0px_6px_18px_#2a2a270f] flex flex-row gap-[12px] p-[16px_19px_16px_16px] justify-start items-start bg-[#ffffff] [border:1px_solid_#e4e2da] rounded-[16px]">
               <div className="box-border w-[30px] shrink-0 h-[30px] bg-[url('/images/whip/whip_logo.png')] bg-no-repeat bg-contain bg-center rounded-[8px]" />
@@ -171,6 +174,7 @@ export function OnePromptEveryAsset() {
             </div>
             <div className="box-border w-[635px] h-[64px] absolute left-0 top-[576px] [background-image:linear-gradient(180deg,_#ffffff00_0%,_#ffffff_92%)] bg-no-repeat bg-size-[100%_100%] [z-index:1]" />
           </div>
+        </div>
         </div>
       </div>
     </div>

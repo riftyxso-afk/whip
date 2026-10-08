@@ -11,7 +11,7 @@ import { SiteFooter } from '@/components/sections/SiteFooter';
 
 export default function Home() {
   return (
-    <div className="box-border w-full h-[11603px] flex flex-col gap-0 justify-start items-center bg-[#fafaf7] overflow-hidden">
+    <div className="box-border w-full min-h-screen flex flex-col gap-0 justify-start items-center bg-[#fafaf7] overflow-x-hidden">
       <SiteHero />
       <WorksWithYourAgent />
       <div id="possible" className="w-full flex justify-center">

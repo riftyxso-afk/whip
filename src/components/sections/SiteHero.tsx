@@ -2,14 +2,14 @@ import { AgentRotator } from "@/components/AgentRotator";
 
 export function SiteHero() {
   return (
-    <div className="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-[12px_12px_0px_12px] justify-start items-center bg-[#fafaf7] overflow-hidden">
-      <div className="box-border w-full h-fit shrink-0 flex flex-col gap-0 justify-start items-center [background-image:linear-gradient(180deg,_#f7f7f5_0%,_#f5f4f6_58%,_#eee9f5_100%)] bg-no-repeat bg-size-[100%_100%] rounded-[28px] overflow-hidden relative">
+    <div className="box-border w-full h-fit shrink-0 flex flex-col gap-[14px] p-2 sm:p-[12px_12px_0px_12px] justify-start items-center bg-[#fafaf7] overflow-hidden">
+      <div className="box-border w-full h-fit shrink-0 flex flex-col gap-0 justify-start items-center [background-image:linear-gradient(180deg,_#f7f7f5_0%,_#f5f4f6_58%,_#eee9f5_100%)] bg-no-repeat bg-size-[100%_100%] rounded-[20px] sm:rounded-[28px] overflow-hidden relative">
         <div className="box-border w-[900px] h-[760px] absolute left-[calc(50%_-_1013.5px)] top-[664.52px] [background-image:radial-gradient(ellipse_50%_50%_at_50%_50%,_#aa92ec4d_0%,_#aa92ec00_100%)] bg-no-repeat bg-size-[100%_100%] [z-index:0]" />
         <div className="box-border w-[900px] h-[760px] absolute right-[calc(50%_-_1013.5px)] top-[664.52px] [background-image:radial-gradient(ellipse_50%_50%_at_50%_50%,_#f0aace3d_0%,_#f0aace00_100%)] bg-no-repeat bg-size-[100%_100%] [z-index:1]" />
         <div className="box-border w-full h-fit shrink-0 flex flex-col gap-0 justify-start items-start relative [z-index:2]">
-          <div className="box-border w-full h-fit shrink-0 flex flex-row gap-0 p-[16px_24px_0px_24px] justify-center items-center">
-            <div className="box-border w-[1392px] shrink-0 h-fit flex flex-row gap-[24px] p-[12px_0px_12px_4px] justify-start items-center rounded-[999px] relative">
-              <div className="box-border [flex:1_1_0] h-fit flex flex-row gap-0 justify-start items-center relative [z-index:0]">
+          <div className="box-border w-full h-fit shrink-0 flex flex-row gap-0 px-4 sm:px-6 pt-4 justify-center items-center">
+            <div className="box-border w-full max-w-[1392px] shrink-0 h-fit flex flex-row gap-[24px] p-[12px_0px_12px_4px] justify-between items-center rounded-[999px] relative">
+              <div className="box-border w-fit h-fit flex flex-row gap-0 justify-start items-center relative [z-index:0]">
                 <a href="/" className="box-border w-[116.14px] shrink-0 h-[32px] relative block">
                   <div className="box-border w-[31.2px] h-[31.2px] [transform:rotate(-5deg)] [transform-origin:top_left] absolute left-[0.4px] top-[2.85px] [z-index:0]">
                     <div className="box-border w-[34.32px] h-[34.32px] absolute left-[-1.49px] top-[-0.85px] bg-[url('/images/whip/whip_logo.png')] bg-no-repeat bg-contain bg-center [z-index:0]" />
@@ -17,78 +17,68 @@ export function SiteHero() {
                   <div className="text-[21px]/[21px] box-border absolute left-[41px] top-[5.5px] text-[#45434a] font-inter-variable font-normal tracking-[-0.8px] text-left [white-space:nowrap] [z-index:1]">whip</div>
                 </a>
               </div>
-              <div className="box-border w-fit shrink-0 h-fit flex flex-row gap-[29.99px] justify-center items-center relative [z-index:1]">
-                <a href="#why" className="text-[14px]/[17px] box-border text-[#2a2a27] font-inter-variable font-normal tracking-[-0.04px] text-left [white-space:nowrap]">Why Whip</a>
-                <a href="#features" className="text-[14px]/[17px] box-border text-[#2a2a27] font-inter-variable font-normal tracking-[-0.04px] text-left [white-space:nowrap]">Features</a>
-                <a href="#possible" className="text-[14px]/[17px] box-border text-[#2a2a27] font-inter-variable font-normal tracking-[-0.04px] text-left [white-space:nowrap]">What’s Possible</a>
+              <div className="hidden md:flex box-border w-fit shrink-0 h-fit flex-row gap-[29.99px] justify-center items-center relative [z-index:1]">
+                <a href="#why" className="text-[14px]/[17px] box-border text-[#2a2a27] font-inter-variable font-normal tracking-[-0.04px] text-left [white-space:nowrap] hover:text-[#000000]">Why Whip</a>
+                <a href="#features" className="text-[14px]/[17px] box-border text-[#2a2a27] font-inter-variable font-normal tracking-[-0.04px] text-left [white-space:nowrap] hover:text-[#000000]">Features</a>
+                <a href="#possible" className="text-[14px]/[17px] box-border text-[#2a2a27] font-inter-variable font-normal tracking-[-0.04px] text-left [white-space:nowrap] hover:text-[#000000]">What’s Possible</a>
               </div>
-              <div className="box-border [flex:1_1_0] h-fit flex flex-row gap-0 justify-end items-center relative [z-index:2]">
+              <div className="box-border w-fit h-fit flex flex-row gap-0 justify-end items-center relative [z-index:2]">
                 <a href="/waitlist" className="box-border w-fit shrink-0 h-fit flex flex-row gap-0 p-[11px_18px] justify-center items-center bg-[#2a2a27] rounded-[999px]">
                   <div className="text-[14px]/[17px] box-border text-[#ffffff] font-inter font-medium text-center [white-space:nowrap]">Join waitlist</div>
                 </a>
               </div>
-              <div className="box-border w-[1392px] h-[62.8px] absolute left-0 top-0 rounded-[999px] [z-index:3]" />
+              <div className="box-border w-full max-w-[1392px] h-[62.8px] absolute left-0 top-0 rounded-[999px] pointer-events-none [z-index:3]" />
             </div>
           </div>
         </div>
-        <div className="box-border w-[1440px] h-fit shrink-0 flex flex-col gap-0 justify-start items-center relative [z-index:3]">
-          <div className="box-border w-[1040px] h-fit shrink-0 flex flex-col gap-0 p-[52px_24px_0px_24px] justify-start items-center overflow-hidden">
+        <div className="box-border w-full max-w-[1440px] h-fit shrink-0 flex flex-col gap-0 justify-start items-center relative [z-index:3]">
+          <div className="box-border w-full max-w-[1040px] h-fit shrink-0 flex flex-col gap-0 px-4 pt-8 sm:pt-[52px] justify-start items-center overflow-hidden">
             <div className="box-border w-full h-fit shrink-0 flex flex-col gap-0 justify-start items-start">
-              <div className="text-[52px]/[53px] box-border w-full text-[#2a2a27] font-inter font-medium tracking-[-1.56px] text-center">
+              <div className="text-[26px]/[32px] sm:text-[38px]/[42px] md:text-[52px]/[53px] box-border w-full text-[#2a2a27] font-inter font-medium tracking-[-1px] sm:tracking-[-1.56px] text-center">
                 <AgentRotator />
               </div>
             </div>
-            <div className="box-border w-fit h-fit shrink-0 flex flex-col gap-0 p-[24px_0px_0px_0px] justify-start items-center overflow-hidden">
-              <div className="box-border w-[620px] h-fit shrink-0 flex flex-col gap-0 justify-center items-center">
-                <div className="box-border w-fit h-fit shrink-0 flex flex-row gap-0 justify-start items-center">
-                  <div className="text-[18px]/[28px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.14px] text-left [white-space:nowrap]">Whip is the</div>
-                  <div className="box-border w-fit shrink-0 h-fit flex flex-row gap-[4px] p-[1px_2px] justify-start items-center bg-[#ffb00061] rounded-[4px]">
-                    <div className="text-[18px]/[28px] box-border text-[#2a2a27] font-inter font-normal tracking-[-0.14px] text-left [white-space:nowrap]">agent super app</div>
-                    <div className="box-border w-[13px] shrink-0 h-[13px] relative">
-                      <svg viewBox="0 0 12 12" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="box-border w-[7.87px] h-[6.3px] absolute left-[2.4px] top-[3.15px] overflow-visible [z-index:0]">
-                        <path d="M0 4l10 0m-4-4l4 4-4 4" fill="none" stroke="#2A2A27" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div className="text-[18px]/[28px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.14px] text-left [white-space:nowrap]">for vibe coding in macOS —</div>
-                </div>
-                <div className="box-border w-fit h-fit shrink-0 flex flex-row gap-0 justify-start items-center">
-                  <div className="text-[18px]/[28px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.14px] text-left [white-space:nowrap]">multi-pane terminal, on-device voice dictation, local-first.</div>
-                </div>
+            <div className="box-border w-full max-w-[620px] h-fit shrink-0 flex flex-col gap-0 pt-4 sm:pt-[24px] justify-center items-center text-center">
+              <div className="box-border w-full flex flex-wrap gap-x-1.5 justify-center items-center text-center">
+                <span className="text-[16px]/[24px] sm:text-[18px]/[28px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.14px]">Whip is the</span>
+                <span className="box-border w-fit shrink-0 h-fit inline-flex flex-row gap-[4px] p-[1px_6px] justify-start items-center bg-[#ffb00061] rounded-[4px]">
+                  <span className="text-[16px]/[24px] sm:text-[18px]/[28px] box-border text-[#2a2a27] font-inter font-normal tracking-[-0.14px]">agent super app</span>
+                  <svg viewBox="0 0 12 12" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="w-[10px] h-[8px]">
+                    <path d="M0 4l10 0m-4-4l4 4-4 4" fill="none" stroke="#2A2A27" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <span className="text-[16px]/[24px] sm:text-[18px]/[28px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.14px]">for vibe coding in macOS —</span>
+              </div>
+              <div className="text-[15px]/[22px] sm:text-[18px]/[28px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.14px] text-center pt-1">
+                multi-pane terminal, on-device voice dictation, local-first.
               </div>
             </div>
-            <div className="box-border w-fit h-fit shrink-0 flex flex-row gap-[20px] p-[36px_0px_0px_0px] justify-start items-center overflow-hidden">
-              <a href="/waitlist" className="box-border w-fit shrink-0 h-[48px] flex flex-row gap-0 p-[0px_22px] justify-center items-center bg-[#2a2a27] rounded-[999px]">
-                <div className="text-[15px]/[18px] box-border text-[#ffffff] font-inter-variable font-normal text-left [white-space:nowrap]">Join waitlist</div>
+            <div className="box-border w-full sm:w-fit h-fit shrink-0 flex flex-col sm:flex-row gap-[12px] sm:gap-[20px] pt-6 sm:pt-[36px] justify-center items-center">
+              <a href="/waitlist" className="box-border w-full sm:w-fit shrink-0 h-[48px] flex flex-row gap-0 px-[26px] justify-center items-center bg-[#2a2a27] rounded-[999px] hover:bg-[#3d3b37] transition-colors">
+                <div className="text-[15px]/[18px] box-border text-[#ffffff] font-inter-variable font-normal text-center [white-space:nowrap]">Join waitlist</div>
               </a>
-              <a href="#features" className="box-border w-fit shrink-0 h-[48px] [backdrop-filter:blur(6px)] flex flex-row gap-[6px] p-[0px_18px_0px_22px] justify-center items-center bg-[#ffffffb3] rounded-[999px] relative">
-                <div className="text-[15px]/[18px] box-border text-[#2a2a27] font-inter-variable font-normal text-left [white-space:nowrap] relative [z-index:0]">See what it can do</div>
-                <div className="box-border w-[13px] shrink-0 h-[13px] overflow-hidden relative [z-index:1]">
-                  <div className="box-border w-[13px] h-[13px] absolute left-0 top-0 overflow-hidden [z-index:0]">
-                    <svg viewBox="0 0 7.5 15" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="box-border w-[4.063px] h-[8.125px] absolute left-[4.875px] top-[2.438px] overflow-visible [z-index:0]">
-                      <path d="M0 0l7.5 7.5-7.5 7.5 0-15z" fill="none" strokeWidth="1" />
-                    </svg>
-                    <svg viewBox="0 0 7.5 15" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="box-border w-[4.063px] h-[8.125px] absolute left-[4.875px] top-[2.438px] overflow-visible [z-index:1]">
-                      <path d="M0 0l7.5 7.5-7.5 7.5" fill="none" strokeWidth="1" />
-                    </svg>
-                  </div>
+              <a href="#features" className="box-border w-full sm:w-fit shrink-0 h-[48px] [backdrop-filter:blur(6px)] flex flex-row gap-[6px] px-[22px] justify-center items-center bg-[#ffffffb3] [border:1px_solid_#2a2a271a] rounded-[999px] relative hover:bg-[#ffffff] transition-colors">
+                <div className="text-[15px]/[18px] box-border text-[#2a2a27] font-inter-variable font-normal text-center [white-space:nowrap] relative [z-index:0]">See what it can do</div>
+                <div className="box-border w-[13px] shrink-0 h-[13px] overflow-hidden relative [z-index:1] flex items-center justify-center">
+                  <svg viewBox="0 0 7.5 15" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="w-[6px] h-[10px]">
+                    <path d="M0 0l7.5 7.5-7.5 7.5" fill="none" strokeWidth="1.5" stroke="#2a2a27" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
-                <div className="box-border w-[190.44px] h-[48px] absolute left-0 top-0 [border:1px_solid_#2a2a271a] rounded-[999px] [z-index:2]" />
               </a>
             </div>
           </div>
         </div>
-        <div className="box-border w-full h-fit shrink-0 flex flex-col gap-0 p-[52px_24px_72px_24px] justify-start items-center relative [z-index:4]">
-          <div className="box-border w-fit h-fit shrink-0 [box-shadow:0px_1px_2px_#2a2a270d,_0px_14px_36px_#2a2a271a,_0px_40px_90px_#2a2a271a,_0px_0px_1px_#2a2a2712] flex flex-col gap-0 justify-start items-start bg-[#f7faf1] rounded-[10px] overflow-hidden relative">
-            <div className="box-border w-[1120px] h-[586.84px] shrink-0 bg-[#f7faf1] flex flex-col gap-0 justify-start items-start relative [z-index:1]">
+        <div className="box-border w-full max-w-[1120px] h-fit shrink-0 flex flex-col gap-0 px-4 sm:px-6 pt-8 pb-12 sm:pb-[72px] justify-start items-center relative [z-index:4]">
+          <div className="box-border w-full h-fit [box-shadow:0px_1px_2px_#2a2a270d,_0px_14px_36px_#2a2a271a,_0px_40px_90px_#2a2a271a,_0px_0px_1px_#2a2a2712] flex flex-col gap-0 justify-start items-start bg-[#f7faf1] rounded-[10px] overflow-hidden relative">
+            <div className="box-border w-full h-auto min-h-[380px] md:h-[586.84px] shrink-0 bg-[#f7faf1] flex flex-col gap-0 justify-start items-start relative [z-index:1]">
               <div className="box-border w-full h-[38px] shrink-0 flex flex-row gap-[8px] px-[14px] items-center bg-[#2a2a27]">
                 <div className="box-border w-[9px] h-[9px] rounded-full bg-[#ff5f57]" />
                 <div className="box-border w-[9px] h-[9px] rounded-full bg-[#febc2e]" />
                 <div className="box-border w-[9px] h-[9px] rounded-full bg-[#28c840]" />
                 <div className="text-[11px]/[14px] box-border font-geist-mono text-[#8a8880] pl-[10px]">whip — 3 panes</div>
               </div>
-              <div className="box-border w-full h-[548.84px] shrink-0 flex flex-row gap-[1px] p-[1px] bg-[#e7e0d5]">
-                <div className="box-border [flex:1_1_0] h-full flex flex-col gap-[6px] p-[14px] bg-[#1c1b19]">
+              <div className="box-border w-full flex-1 flex flex-col md:flex-row gap-[1px] p-[1px] bg-[#e7e0d5]">
+                <div className="box-border flex-1 w-full h-full flex flex-col gap-[6px] p-4 sm:p-[14px] bg-[#1c1b19]">
                   <div className="text-[10px]/[14px] box-border font-geist-mono text-[#3aa676]">claude</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#d5d2ca]">$ claude</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#8a8880]">Refactor auth module,</div>
@@ -96,14 +86,14 @@ export function SiteHero() {
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#3aa676] pt-[6px]">✓ 4 files changed</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#3aa676]">✓ tests passing</div>
                 </div>
-                <div className="box-border [flex:1_1_0] h-full flex flex-col gap-[6px] p-[14px] bg-[#232220]">
+                <div className="box-border flex-1 w-full h-full flex flex-col gap-[6px] p-4 sm:p-[14px] bg-[#232220]">
                   <div className="text-[10px]/[14px] box-border font-geist-mono text-[#a98bf0]">codex</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#d5d2ca]">$ codex</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#8a8880]">Write test suite for</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#8a8880]">webhook failures.</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#3aa676] pt-[6px]">✓ 12 new tests</div>
                 </div>
-                <div className="box-border [flex:1_1_0] h-full flex flex-col gap-[6px] p-[14px] bg-[#1c1b19]">
+                <div className="box-border flex-1 w-full h-full flex flex-col gap-[6px] p-4 sm:p-[14px] bg-[#1c1b19]">
                   <div className="text-[10px]/[14px] box-border font-geist-mono text-[#2b6cf5]">gemini</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#d5d2ca]">$ gemini</div>
                   <div className="text-[11px]/[17px] box-border font-geist-mono text-[#8a8880]">Update documentation</div>
@@ -112,7 +102,7 @@ export function SiteHero() {
                 </div>
               </div>
             </div>
-            <div className="box-border w-[32px] h-[32px] absolute left-[1078px] top-[544.85px] bg-[#fafaf7f0] [border:1px_solid_#2a2a271f] rounded-[16px] [z-index:2]">
+            <div className="hidden md:block box-border w-[32px] h-[32px] absolute right-3 bottom-3 bg-[#fafaf7f0] [border:1px_solid_#2a2a271f] rounded-[16px] [z-index:2]">
               <div className="box-border w-[12px] h-[12px] absolute left-[10px] top-[10px] overflow-hidden [z-index:0]">
                 <div className="box-border w-[3px] h-[10px] absolute left-[2px] top-[1px] bg-[#2A2A27] rounded-[0.6px] [z-index:0]" />
                 <div className="box-border w-[3px] h-[10px] absolute left-[7px] top-[1px] bg-[#2A2A27] rounded-[0.6px] [z-index:1]" />
@@ -121,7 +111,7 @@ export function SiteHero() {
           </div>
         </div>
       </div>
-      <div className="box-border w-fit h-fit shrink-0 flex flex-row gap-[4.5px] justify-start items-end">
+      <div className="box-border w-fit h-fit shrink-0 flex flex-row gap-[4.5px] justify-start items-end pt-2">
         <div className="box-border w-[36px] shrink-0 h-[46.5px] relative">
           <div className="box-border w-[24.377px] h-[28.389px] absolute left-[9.18px] top-[7.868px] [z-index:0]">
             <svg viewBox="0 -2.6635825634002686e-7 24.030000686645508 27.129999427124858" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="box-border w-[24.03px] h-[27.13px] absolute left-0 top-[1.222px] overflow-visible [z-index:0]">

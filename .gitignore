@@ -45,3 +45,6 @@ next-env.d.ts
 
 # raw assets
 /portalink.png
+
+# Local Netlify folder
+.netlify
