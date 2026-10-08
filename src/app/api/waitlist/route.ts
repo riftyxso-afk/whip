@@ -12,11 +12,11 @@ export async function POST(request: Request) {
   try {
     ({ email } = await request.json());
   } catch {
-    return NextResponse.json({ error: "Body tidak valid." }, { status: 400 });
+    return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
 
   if (typeof email !== "string" || !EMAIL_RE.test(email.trim())) {
-    return NextResponse.json({ error: "Email tidak valid." }, { status: 400 });
+    return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
   }
 
   const entry = {
@@ -25,11 +25,18 @@ export async function POST(request: Request) {
   };
 
   try {
-    await mkdir(DATA_DIR, { recursive: true });
-    await appendFile(DATA_FILE, JSON.stringify(entry) + "\n", "utf8");
-  } catch {
+    try {
+      await mkdir(DATA_DIR, { recursive: true });
+      await appendFile(DATA_FILE, JSON.stringify(entry) + "\n", "utf8");
+    } catch {
+      // Fallback for serverless environments with read-only root filesystems
+      const tmpFile = path.join("/tmp", "waitlist.ndjson");
+      await appendFile(tmpFile, JSON.stringify(entry) + "\n", "utf8");
+    }
+  } catch (err) {
+    console.error("Waitlist storage error:", err);
     return NextResponse.json(
-      { error: "Gagal menyimpan. Coba lagi." },
+      { error: "Unable to save. Please try again." },
       { status: 500 }
     );
   }
