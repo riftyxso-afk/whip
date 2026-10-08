@@ -28,14 +28,20 @@ export function AboutTheMaker() {
         </div>
         <div className="box-border w-full lg:w-[450px] shrink-0 h-fit flex flex-col gap-[22px] justify-start items-center relative [z-index:1]">
           <div className="box-border w-full max-w-[380px] h-[280px] sm:h-[340px] shrink-0 relative flex items-center justify-center">
-            <div className="box-border w-[130px] h-[130px] sm:w-[160px] sm:h-[160px] [transform:rotate(-7deg)] [transform-origin:center] [box-shadow:0px_14px_30px_#2a2a272e,_0px_2px_6px_#2a2a271a] absolute left-[30px] sm:left-[55px] top-[40px] sm:top-[75px] rounded-[32px] sm:rounded-[40px] overflow-hidden [z-index:1]">
-              <div className="box-border w-full h-full bg-[url('/images/whip/portalink.png')] bg-no-repeat bg-cover bg-center rounded-[32px] sm:rounded-[40px]" />
+            {/* Project 1: Portalink */}
+            <div className="box-border w-[120px] h-[120px] sm:w-[145px] sm:h-[145px] [transform:rotate(-10deg)] [transform-origin:center] [box-shadow:0px_14px_30px_#2a2a272e,_0px_2px_6px_#2a2a271a] absolute left-[15px] sm:left-[35px] top-[50px] sm:top-[75px] rounded-[30px] sm:rounded-[36px] overflow-hidden [z-index:1]">
+              <div className="box-border w-full h-full bg-[url('/images/whip/portalink.png')] bg-no-repeat bg-cover bg-center rounded-[30px] sm:rounded-[36px]" />
             </div>
-            <div className="box-border w-[145px] h-[145px] sm:w-[175px] sm:h-[175px] [transform:rotate(5deg)] [transform-origin:center] [box-shadow:0px_18px_40px_#2a2a273d,_0px_3px_8px_#2a2a2724] absolute left-[150px] sm:left-[180px] top-[60px] sm:top-[95px] rounded-[36px] sm:rounded-[44px] overflow-hidden [z-index:2]">
-              <div className="box-border w-full h-full bg-[url('/images/whip/whip_icon_tight.png')] bg-no-repeat bg-cover bg-center rounded-[36px] sm:rounded-[44px]" />
+            {/* Project 2: Nguci */}
+            <div className="box-border w-[120px] h-[120px] sm:w-[145px] sm:h-[145px] [transform:rotate(8deg)] [transform-origin:center] [box-shadow:0px_14px_30px_#2a2a272e,_0px_2px_6px_#2a2a271a] absolute right-[15px] sm:right-[35px] top-[40px] sm:top-[65px] rounded-[30px] sm:rounded-[36px] overflow-hidden [z-index:2]">
+              <div className="box-border w-full h-full bg-[url('/images/whip/nguci_icon.png')] bg-no-repeat bg-cover bg-center rounded-[30px] sm:rounded-[36px]" />
+            </div>
+            {/* Project 3: Whip */}
+            <div className="box-border w-[135px] h-[135px] sm:w-[165px] sm:h-[165px] [transform:rotate(-2deg)] [transform-origin:center] [box-shadow:0px_18px_40px_#2a2a273d,_0px_3px_8px_#2a2a2724] absolute left-[125px] sm:left-[142px] top-[65px] sm:top-[90px] rounded-[34px] sm:rounded-[42px] overflow-hidden [z-index:3]">
+              <div className="box-border w-full h-full bg-[url('/images/whip/whip_icon_tight.png')] bg-no-repeat bg-cover bg-center rounded-[34px] sm:rounded-[42px]" />
             </div>
           </div>
-          <div className="text-[15px]/[20px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.07px] text-center [white-space:nowrap]">Portalink, and now Whip.</div>
+          <div className="text-[15px]/[20px] box-border text-[#8a8880] font-inter font-normal tracking-[-0.07px] text-center [white-space:nowrap]">Portalink, Nguci, and now Whip.</div>
         </div>
       </div>
     </div>
